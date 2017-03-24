@@ -1,0 +1,26 @@
+{
+  "name": "create-vintange-app",
+  "version": "1.0.0",
+  "description": "Feel like a true connoisseur. Just like a good wine, good code needs time to mature.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pvalentim/create-vintage-app.git"
+  },
+  "author": "Pedro Valentim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pvalentim/create-vintage-app/issues"
+  },
+  "bin": {
+    "create-vintage-app": "./index.js"
+  },
+  "homepage": "https://github.com/pvalentim/create-vintage-app#readme",
+  "dependencies": {
+    "cowsay": "^1.1.9",
+    "lolcatjs": "^2.0.2"
+  }
+}
