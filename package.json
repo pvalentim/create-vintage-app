@@ -1,6 +1,6 @@
 {
   "name": "create-vintange-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Feel like a true connoisseur. Just like a good wine, good code needs time to mature.",
   "main": "index.js",
   "scripts": {
