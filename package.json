@@ -18,7 +18,7 @@
   "bin": {
     "create-vintage-app": "./index.js"
   },
-  "homepage": "https://github.com/pvalentim/create-vintage-app#readme",
+  "homepage": "https://pvalentim.github.io/create-vintage-app/index.htm",
   "dependencies": {
     "cowsay": "^1.1.9",
     "lolcatjs": "^2.0.2"
