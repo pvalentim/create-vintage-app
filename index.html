@@ -1,24 +1,152 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" version="-//W3C//DTD XHTML 1.1//EN" xml:lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Vintage</title>
+  <meta name="description" content="Feel like a true connoisseur. Just like a good wine, good code needs time to mature." />
+  <link rel="stylesheet" href="src/reset.css" />
+  <link rel="stylesheet" href="src/typography.css" />
+  <link rel="stylesheet" href="src/grid.css" />
+  <link rel="stylesheet" href="src/forms.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet" />
+  <style type="text/css">
+    body {
+      font-family: Raleway, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Lobster', 'sans-serif';
+    }
+    h1 {
+      text-shadow: 1px 1px 0px #ffffff, 3px 3px 0px #999;
+      transform: rotate(-5deg);
+      transform-origin: 30%;
+      transition: transform 0.2s ease-out;
+    }
+    h1:hover {
+      transform: rotate(0deg);
+    }
+    h2 {
+      margin-top: 50px;
+    }
+    dt {
+      font-weight: 900;
+    }
+    pre {
+      background-color: #111;
+      color: #ddd;
+      padding: 10px;
+      border-image: url('http://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/frame.png') 93 92 87 92 stretch stretch;
+      border-color: #f4be52;
+      border-style: inset;
+      border-width: 60px;
+      margin-bottom: 50px;
+    }
+    .old-effect {
+      filter: grayscale(1);
+    }
+
+    .logos {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px
+    }
+
+    .logos img {
+      width: 150px;
+    }
+
+    .footer {
+      margin-top: 80px;
+    }
+
+    .footer__credits {
+      text-align: right;
+    }
+
+    .footer__logos a {
+      margin-right: 10px;
+    }
+  </style>
   </head>
   <body>
-    <h1>Vintage</h1>
-    <p>The starter kit for the true connoisseur.</p>
-    <p>Don't let Javascript fatigue get the best of you. We've sniffed through thousands of modules and their versions to bring you the best vintages.</p>
-    <p>Let's get started:</p>
-    <pre>
-      npm install -g create-vintage-app
+    <div class="container">
+      <div class="column span-6"><h1>Vintage</h1></div>
+      <div class="column span-18 last prepend-top"><p><em>Feel like a true <span class="highlight">connoisseur</span>. Just like a good wine, good code needs time to mature.</em></p></div>
+      <div class="clearfix"></div>
+      <!-- <p>The starter kit for the true connoisseur.</p> -->
+      <p class="prepend-top">Don't let Javascript fatigue get the best of you.
+        <br />
+        We've sniffed through thousands of modules and their versions to bring you the best vintages.
+      </p>
+      <h2>Let's get started:</h2>
+      <pre>
+npm install -g create-vintage-app
 
-      create-vintage-app my-app
-      cd my-app/
-      npm start
-    </pre>
-    <p>What's included?</p>
-    <dl>
-      <dt>jQuery 1.3</dt>
-      <dd>After much experimentation and deliberation we've landed on the 1.3 vintage. In this version we can say jQuery became an adult, a rich and solid framework. The one you go to when you don't wanna think about.</dd>
-    </dl>
+create-vintage-app my-app
+cd my-app/
+npm start</pre>
+      <h2>What's included?</h2>
+      <dl>
+        <dt>jQuery 1.3</dt>
+        <dd>After much experimentation and deliberation we've landed on the 1.3 vintage. In this version we can say jQuery became an adult, a rich and solid framework. The one you go to when you don't wanna think about.</dd>
+        <dt>Blueprint 0.8</dt>
+        <dd>Bootstrap what? Blueprint is the only css framework the true connoisseur uses.</dd>
+        <dt>Vintage Scroll 0.95</dt>
+        <dd>Get that Windows 95 scrolling feel</dd>
+      </dl>
+      <h2>Why use it?</h2>
+      <div class="column span-6">
+        <h3 class="quiet">Mechanical Reloading</h3>
+        <p>Avoid the bloat of live reloading scripts, reload your pages with Cmd+R.</p>
+      </div>
+      <div class="column span-6">
+        <h3 class="quiet">Mobile Un-Ready</h3>
+        <p>The true connoisseur pinches to zoom.</p>
+      </div>
+      <div class="column span-6">
+        <h3 class="quiet">Fast</h3>
+        <p>We got tired of downloading hundreds of megabytes of code. Vintage is &lt; 300kb, making your FTP upload fast af.</p>
+      </div>
+      <div class="column span-6 last">
+        <h3 class="quiet">CSS No-Processor ©</h3>
+        <p>What's better than a CSS pre-processor or post-processor ? A CSS No-Processor ©. Does absolutely nothing.</p>
+      </div>
+    </div>
+    <div class="container old-effect">
+      <h2 >Who's using it? <sup class="small">*</sup></h2>
+      <div class="column span-6 logos">
+        <img src="https://web.archive.org/web/20060601005656im_/http://us.i1.yimg.com/us.yimg.com/i/ww/beta/y3.gif" alt="Yahoo!"/>
+      </div>
+      <div class="column span-6 logos">
+        <img src="https://web.archive.org/web/20060202160308im_/http://x.myspace.com/images/blog/blogLogo.gif" alt="Yahoo!"/>
+      </div>
+      <div class="column span-6 logos">
+        <img src="https://web.archive.org/web/20060113073739/http://www.mozilla.org/foundation/identity-guidelines/mozilla-foundation-bw.png" alt="Yahoo!"/>
+      </div>
+      <div class="column span-6 logos last">
+        <img src="https://web.archive.org/web/20060202002630im_/http://www.google.com/intl/en/images/logo.gif" alt="Yahoo!"/>
+      </div>
+      <div class="clearfix"></div>
+      <p class="small">* Not really but you knew that didn't you?</p>
+    </div>
+    <div class="container footer">
+      <div class="column span-12 old-effect footer__logos">
+        <a href="http://validator.w3.org/check?uri=referer"><img
+          src="http://www.w3.org/Icons/valid-xhtml11" alt="Valid XHTML 1.1" height="31" width="88" /></a>
+        <a href="http://www.w3.org/Icons/valid-css2"><img alt="Valid CSS2" src="http://www.w3.org/Icons/valid-css2.png"></a>
+      </div>
+      <div class="column span-12 last">
+        <p class="small footer__credits">Master Connoisseur © <a href="https://twitter.com/pvalentin" title="Link to Twitter">Pedro Valentim</a><br/></p>
+      </div>
+    </div>
+
+    <!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+mixpanel.init("200334f1c647afdf8c5dcbd11d71c8ec");</script><!-- end Mixpanel -->
   </body>
 </html>
